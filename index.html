@@ -8,12 +8,24 @@
 	<body>
 		<h1>A web page to support graduate admission</h1>
 		<h2>IE5900 Data Visualization Hw2</h2>
-		<script type="text/javascript">
-			d3.json("https://hivelab.org/static/students.json", function(data) {
-    		for (var i = 0; i <data.length; i++) {
-				d3.select("body").append("p").text("Name: " + data[i].Name);
-				};
-			});
-		</script>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>GPA</th>
+					<th>GRE Verbal</th>
+					<th>GRE Quantitative</th>
+					<th>Essay</th>
+					<th>Recom</th>
+				</tr>
+			</thead>
+			<script type="text/javascript">
+				d3.json("https://hivelab.org/static/students.json", function(data) {
+	    		for (var i = 0; i <data.length; i++) {
+					d3.select("body").append("p").text("Name: " + data[i].Name);
+					};
+				});
+			</script>
+		</table>
 	</body>
 </html>
