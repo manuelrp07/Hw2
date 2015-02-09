@@ -31,8 +31,8 @@
 			</tbody>	
 		</table>
 		<script type="text/javascript">
-			d3.json("students.json", function(data) {
-    				for (var i = 0; i <data.length; i++) {
+			d3.json("https://hivelab.org/static/students.json", function(data) {
+    		for (var i = 0; i <data.length; i++) {
 				d3.select("body").append("p").text(data[i].Name);
 				};
 			});
