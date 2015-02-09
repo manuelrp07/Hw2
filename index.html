@@ -6,7 +6,7 @@
 		<script type="text/javascript" src="d3.js"></script>	
 	</head>
 	<body>
-		<h1 style="color: brown;">A web page to support graduate admission</h1>
+		<h1 style="color: blue;">A web page to support graduate admission</h1>
 		<h2>IE5900 Data Visualization Hw2</h2>
 		<table>
 			<thead>
@@ -23,8 +23,9 @@
 				<script type="text/javascript">
 					d3.json("https://hivelab.org/static/students.json", function(data) {
 				    		for (var i = 0; i <data.length; i++) {
-							d3.select("table").append("<tr>").append("<td>").text(data[i].Name);
-							};
+							d3.select("table").append("<tr>");
+							d3.select("<tr>").aappend("<td>").text(data[i].Name);
+				    		};
 					});
 				</script>
 			</tbody>	
