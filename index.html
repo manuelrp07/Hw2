@@ -19,13 +19,15 @@
 					<th>Recom</th>
 				</tr>
 			</thead>
-			<script type="text/javascript">
-				d3.json("https://hivelab.org/static/students.json", function(data) {
-	    		for (var i = 0; i <data.length; i++) {
-					d3.select("body").append("p").text("Name: " + data[i].Name);
-					};
-				});
-			</script>
+			<tbody>
+				<script type="text/javascript">
+					d3.json("https://hivelab.org/static/students.json", function(data) {
+				    		for (var i = 0; i <data.length; i++) {
+							d3.select("body").append("p").text("Name: " + data[i].Name);
+							};
+					});
+				</script>
+			</tbody>	
 		</table>
 	</body>
 </html>
