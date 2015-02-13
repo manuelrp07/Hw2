@@ -5,9 +5,10 @@ table{
   margin-bottom: 20px;
   border-spacing: 0;
   border-collapse: collapse;
-  border: 2px solid #cccccc;
+  border: 1px solid #cccccc;
 }
 
 tr:nth-child(odd)   { background-color:#efefef; }
-tr:nth-child(even)    { background-color:#fff; }
-tb{font-weight: bold}
+tb{font-weight: bold;
+  border: 1px solid #cccccc;
+}
