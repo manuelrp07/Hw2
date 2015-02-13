@@ -8,6 +8,6 @@ table{
   border: 2px solid brown;
 }
 
-tr:nth-child(odd)   { background-color:#FFD630; }
+tr:nth-child(odd)   { background-color:#efefef; }
 tr:nth-child(even)    { background-color:#fff; }
 tb{font-weight: bold}
