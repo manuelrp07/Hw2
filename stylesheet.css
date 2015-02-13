@@ -2,7 +2,6 @@
 font-family:Garamond;
 font-size:200%;
 }
-
 table{
   width: 100;
   min-width: 30%;
@@ -12,8 +11,10 @@ table{
   border-collapse: collapse;
   border: 1px solid #cccccc;
 }
-
-tr:nth-child(odd)   { background-color:#efefef; }
-tb{font-weight: bold;
+tr:nth-child(odd){ 
+  background-color:#efefef; 
+}
+tb{
+  font-weight: bold;
   border: 1px solid #cccccc;
 }
