@@ -2,11 +2,10 @@ table{
   width: 100;
   min-width: 30%;
   max-width: 1000%x;
-  margin-bottom: 20px; 
-  background-color: transparent;
+  margin-bottom: 20px;
   border-spacing: 0;
   border-collapse: collapse;
-  border: 2px solid #FFD630;}
+  border: 2px solid brown;}
 }
 
 tr:nth-child(odd)   { background-color:#FFD630; }
