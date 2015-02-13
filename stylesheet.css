@@ -14,7 +14,7 @@ tr:nth-child(odd){
   border: 1px solid #cccccc;
 }
 th{
-  width: 20px;
+  width: 150px;
   border: 1px solid black;
 }
 td{
