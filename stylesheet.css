@@ -2,12 +2,7 @@
 font-family:Garamond;
 }
 table{
-  width: 100;
-  min-width: 30%;
-  max-width: 1000%x;
-  margin-bottom: 20px;
   border-spacing: 0;
-  border: 1px solid #cccccc;
 }
 tr:nth-child(odd){ 
   background-color:#efefef; 
