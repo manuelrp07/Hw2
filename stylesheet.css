@@ -11,6 +11,7 @@ table{
 }
 tr:nth-child(odd){ 
   background-color:#efefef; 
+  border: 1px solid #cccccc;
 }
 tb{
   font-weight: bold;
