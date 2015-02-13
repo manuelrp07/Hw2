@@ -10,7 +10,7 @@ tr:nth-child(odd){
 }
 th{
   width: 135px;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 td{
   border: 1px solid #cccccc;
