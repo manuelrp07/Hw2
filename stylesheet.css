@@ -13,6 +13,10 @@ tr:nth-child(odd){
   background-color:#efefef; 
   border: 1px solid #cccccc;
 }
+th{
+  width: 10px;
+  border: 1px solid black;
+}
 td{
   width: 10px;
   border: 1px solid #cccccc;
