@@ -1,6 +1,7 @@
 table{
-  width: 30%;
-  max-width: 30%x;
+  width: 100;
+  min-width: 30%;
+  max-width: 1000%x;
   margin-bottom: 20px; 
   background-color: transparent;
   border-spacing: 0;
