@@ -20,13 +20,13 @@
 
 		<script type="text/javascript">
 			d3.json("https://hivelab.org/static/students.json", function(data) {
-		    		var gpa=[9999,0]	//First argument will be min, second max
-		    		var grev=[9999,0]
-		    		var greq=[9999,0]
-		    		var essay=[9999,0]
-		    		var recom=[9999,0]
+		    		var gpa=[9999,0];	//First argument will be min, second max
+		    		var grev=[9999,0];
+		    		var greq=[9999,0];
+		    		var essay=[9999,0];
+		    		var recom=[9999,0];
 		    		for (var i=0; i<data.length;i++){
-		    			console.log(i)
+		    			console.log(i);
 		    			if(data[i].GPA<gpa[1]){gpa[1]=data[i].GPA;	console.log("AAA");}
 		    			if(data[i].GPA>gpa[2]){gpa[1]=data[i].GPA;}
 		    			if(data[i].GRE_V<grev[1]){grev[1]=data[i].GRE_V;}
