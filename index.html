@@ -40,9 +40,16 @@
 		    		
 		    		for (var i = 0; i <data.length; i++) {
 						var estudiante=d3.select("tbody").append("tr");
-		
 						estudiante.append("td").text(data[i].Name)
-						estudiante.append("td").text(data[i].GPA)
+						if(data[i].GPA==gpa[0]){
+							estudiante.append("td").text(data[i].GPA).attr("class": "low")	
+						}
+						else if{data[i].GPA==gpa[1]
+							estudiante.append("td").text(data[i].GPA).attr("class": "top")		
+						}
+						else{
+							estudiante.append("td").text(data[i].GPA)	
+						}
 						estudiante.append("td").text(data[i].GRE_V)
 						estudiante.append("td").text(data[i].GRE_Q)
 						estudiante.append("td").text(data[i].Essay)
