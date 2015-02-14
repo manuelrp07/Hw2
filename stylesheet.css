@@ -3,6 +3,7 @@ font-family:Garamond;
 }
 table{
   border-spacing: 0;
+  border-collapse: collapse
 }
 tr:nth-child(odd){ 
   background-color:#efefef; 
