@@ -43,49 +43,49 @@
 						estudiante.append("td").text(data[i].Name)
 						//Insert GPA
 						if(data[i].GPA==gpa[0]){
-							estudiante.append("td").text(data[i].GPA).attr("class","low");	
+							estudiante.append("td").text(data[i].GPA+"*").attr("class","low");	
 						}
 						else if(data[i].GPA==gpa[1]){
-							estudiante.append("td").text(data[i].GPA).attr("class","top");		
+							estudiante.append("td").text(data[i].GPA+"**").attr("class","top");		
 						}
 						else{
 							estudiante.append("td").text(data[i].GPA);	
 						}
 						//Insert GRE V
 						if(data[i].GRE_V==grev[0]){
-							estudiante.append("td").text(data[i].GRE_V).attr("class","low");	
+							estudiante.append("td").text(data[i].GRE_V+"*").attr("class","low");	
 						}
 						else if(data[i].GRE_V==grev[1]){
-							estudiante.append("td").text(data[i].GRE_V).attr("class","top");		
+							estudiante.append("td").text(data[i].GRE_V+"**").attr("class","top");		
 						}
 						else{
 							estudiante.append("td").text(data[i].GRE_V);	
 						}
 						//Insert GRE Q
 						if(data[i].GRE_Q==greq[0]){
-							estudiante.append("td").text(data[i].GRE_Q).attr("class","low");	
+							estudiante.append("td").text(data[i].GRE_Q+"*").attr("class","low");	
 						}
 						else if(data[i].GRE_Q==greq[1]){
-							estudiante.append("td").text(data[i].GRE_Q).attr("class","top");		
+							estudiante.append("td").text(data[i].GRE_Q+"**").attr("class","top");		
 						}
 						else{
 							estudiante.append("td").text(data[i].GRE_Q);	
 						}
 						//Insert Essay
 						if(data[i].Essay==essay[0]){
-							estudiante.append("td").text(data[i].Essay).attr("class","low");	
+							estudiante.append("td").text(data[i].Essay+"*").attr("class","low");	
 						}
 						else if(data[i].Essay==essay[1]){
-							estudiante.append("td").text(data[i].Essay).attr("class","top");		
+							estudiante.append("td").text(data[i].Essay+"**").attr("class","top");		
 						}
 						else{
 							estudiante.append("td").text(data[i].Essay);	
 						}//Insert Recom
 						if(data[i].Recom==recom[0]){
-							estudiante.append("td").text(data[i].Recom).attr("class","low");	
+							estudiante.append("td").text(data[i].Recom+"*").attr("class","low");	
 						}
-						else if(data[i].recom==recom[1]){
-							estudiante.append("td").text(data[i].Recom).attr("class","top");		
+						else if(data[i].Recom==recom[1]){
+							estudiante.append("td").text(data[i].Recom+"**").attr("class","top");		
 						}
 						else{
 							estudiante.append("td").text(data[i].Recom);	
