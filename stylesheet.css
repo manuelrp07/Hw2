@@ -16,3 +16,13 @@ td{
   border: 1px solid #cccccc;
   text-align: center;
 }
+td.best{
+  background-color:#2EFE9A;
+}
+td.top{
+  background-color:#2EFE9A;
+}
+td.low{
+  background-color:#FF4000;
+}
+
