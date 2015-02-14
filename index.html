@@ -42,6 +42,7 @@
 						var estudiante=d3.select("tbody").append("tr");
 						estudiante.append("td").text(data[i].Name)
 						if(data[i].GPA==gpa[0]){
+							console.log("YES");
 							estudiante.append("td").text(data[i].GPA).attr("class: low");	
 						}
 						else if(data[i].GPA==gpa[1]){
