@@ -20,16 +20,34 @@
 
 		<script type="text/javascript">
 			d3.json("https://hivelab.org/static/students.json", function(data) {
-    		for (var i = 0; i <data.length; i++) {
-				var estudiante=d3.select("tbody").append("tr");
-
-				estudiante.append("td").text(data[i].Name)
-				estudiante.append("td").text(data[i].GPA)
-				estudiante.append("td").text(data[i].GRE_V)
-				estudiante.append("td").text(data[i].GRE_Q)
-				estudiante.append("td").text(data[i].Essay)
-				estudiante.append("td").text(data[i].Recom);
-				};
+		    		var gpa=[9999,0]	//First argument will be min, second max
+		    		var grev=[9999,0]
+		    		var greq=[9999,0]
+		    		var essay=[9999,0]
+		    		var recom=[9999,0]
+		    		for (var i=0; i<data.length;i++){
+		    			if(data[i].GPA<=gpa[1]){gpa[1]=data[i].GPA}
+		    			if(data[i].GPA>=gpa[2]){gpa[1]=data[i].GPA}
+		    			if(data[i].GRE_V<=grev[1]){grev[1]=data[i].GRE_V}
+		    			if(data[i].GRE_V>=grev[2]){grev[1]=data[i].GRE_V}
+		    			if(data[i].GRE_Q<=greq[1]){greq[1]=data[i].GRE_Q}
+		    			if(data[i].GRE_Q>=greq[2]){greq[1]=data[i].GRE_Q}
+		    			if(data[i].Essay<=essay[1]){essay[1]=data[i].Essay}
+		    			if(data[i].Essay>=gpa[2]){essay[1]=data[i].Essay}
+		    			if(data[i].Recom<=recom[1]){recom[1]=data[i].Recom}
+		    			if(data[i].Recom>=recom[2]){recom[1]=data[i].Recom}
+		    		}
+		    		
+		    		for (var i = 0; i <data.length; i++) {
+						var estudiante=d3.select("tbody").append("tr");
+		
+						estudiante.append("td").text(data[i].Name)
+						estudiante.append("td").text(data[i].GPA)
+						estudiante.append("td").text(data[i].GRE_V)
+						estudiante.append("td").text(data[i].GRE_Q)
+						estudiante.append("td").text(data[i].Essay)
+						estudiante.append("td").text(data[i].Recom);
+						};
 			});
 		</script>
 
