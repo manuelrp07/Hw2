@@ -26,7 +26,7 @@
 		    		var essay=[9999,0];
 		    		var recom=[9999,0];
 		    		for (var i=0; i<data.length;i++){
-		    			console.log(data[i].GPA-2);
+		    			console.log(data[i].GPA<gpa[1]);
 		    			if(data[i].GPA<gpa[1]){gpa[1]=data[i].GPA;	console.log("AAA");}
 		    			if(data[i].GPA>gpa[2]){gpa[1]=data[i].GPA;}
 		    			if(data[i].GRE_V<grev[1]){grev[1]=data[i].GRE_V;}
