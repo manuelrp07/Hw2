@@ -43,10 +43,10 @@
 						estudiante.append("td").text(data[i].Name)
 						if(data[i].GPA==gpa[0]){
 							console.log("YES");
-							estudiante.append("td class=low").text(data[i].GPA);	
+							estudiante.append("td").text(data[i].GPA).attr("class","low");	
 						}
 						else if(data[i].GPA==gpa[1]){
-							estudiante.append("td class=top").text(data[i].GPA);		
+							estudiante.append("td").text(data[i].GPA).attr("class","top");		
 						}
 						else{
 							estudiante.append("td").text(data[i].GPA);	
