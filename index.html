@@ -26,16 +26,17 @@
 		    		var essay=[9999,0]
 		    		var recom=[9999,0]
 		    		for (var i=0; i<data.length;i++){
-		    			if(data[i].GPA<=gpa[1]){gpa[1]=data[i].GPA;	console.log("AAA");}
-		    			if(data[i].GPA>=gpa[2]){gpa[1]=data[i].GPA;}
-		    			if(data[i].GRE_V<=grev[1]){grev[1]=data[i].GRE_V;}
-		    			if(data[i].GRE_V>=grev[2]){grev[1]=data[i].GRE_V;}
-		    			if(data[i].GRE_Q<=greq[1]){greq[1]=data[i].GRE_Q;}
-		    			if(data[i].GRE_Q>=greq[2]){greq[1]=data[i].GRE_Q;}
-		    			if(data[i].Essay<=essay[1]){essay[1]=data[i].Essay;}
-		    			if(data[i].Essay>=gpa[2]){essay[1]=data[i].Essay;}
-		    			if(data[i].Recom<=recom[1]){recom[1]=data[i].Recom;}
-		    			if(data[i].Recom>=recom[2]){recom[1]=data[i].Recom;}
+		    			console.log(i)
+		    			if(data[i].GPA<gpa[1]){gpa[1]=data[i].GPA;	console.log("AAA");}
+		    			if(data[i].GPA>gpa[2]){gpa[1]=data[i].GPA;}
+		    			if(data[i].GRE_V<grev[1]){grev[1]=data[i].GRE_V;}
+		    			if(data[i].GRE_V>grev[2]){grev[1]=data[i].GRE_V;}
+		    			if(data[i].GRE_Q<greq[1]){greq[1]=data[i].GRE_Q;}
+		    			if(data[i].GRE_Q>greq[2]){greq[1]=data[i].GRE_Q;}
+		    			if(data[i].Essay<essay[1]){essay[1]=data[i].Essay;}
+		    			if(data[i].Essay>gpa[2]){essay[1]=data[i].Essay;}
+		    			if(data[i].Recom<recom[1]){recom[1]=data[i].Recom;}
+		    			if(data[i].Recom>recom[2]){recom[1]=data[i].Recom;}
 		    		}
 		    		console.log(gpa[0]+"-"+gpa[1]);
 		    		
